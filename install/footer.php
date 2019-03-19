@@ -1,0 +1,1 @@
+<div class="footer"> &copy; 2015-2016 <a href="http://www.lankecms.com" target="_blank">www.lankecms.com</a>（蓝科企业网站系统） </div>
