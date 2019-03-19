@@ -1,0 +1,43 @@
+ <header>
+
+    <div class="top_menu">
+      <div class="container">
+
+        <div class="col-xs-12 col-sm-9 col-md-9">
+          <span class="top_name">欢迎光临~<{$Think.config.web_name}></span>
+        </div>
+
+        <div id="topsearch" class="col-xs-12 col-sm-3 col-md-3">
+            <form id="searchform" method="get" action="<{:U('Search/index')}>">
+                <div class="input-group search_group">
+                    <input type="text" name="name" class="form-control input-sm" placeholder="产品搜索">
+                       <span class="input-group-btn">
+                          <span id="submit_search" onclick="searchform.submit();" title="产品搜索" class="glyphicon glyphicon-search btn-lg" aria-hidden="true"></span>
+                      </span>
+                </div>
+            </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-9 col-md-9">
+            <a href="<{$Think.config.web_url}>"><img src="__ROOT__/Uploads/<{$Think.config.web_logo}>" class="logo" alt="<{$Think.config.web_name}>"/></a>
+        </div>
+ 
+        <div class="col-xs-12 col-sm-3 col-md-3 tel_box">
+          <div class="top_tel"><img src="../Public/images/tel.png" alt="服务热线"></div>
+          <div class="top_number">
+            <span>全国客服热线：</span>
+            <p><{$Think.config.web_tel}></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  
+<{:W('Nav')}>
+
+</header>

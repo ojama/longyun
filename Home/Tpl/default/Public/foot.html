@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-fixed-bottom footer_nav">
+    <div class="foot_nav btn-group dropup">
+        <a class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+            <span class="glyphicon glyphicon-share btn-lg" aria-hidden="true"></span>
+            分享</a>  
+            <div class="dropdown-menu webshare">
+            <{$Think.config.web_share}>
+            </div>
+    </div>
+    <div class="foot_nav"><a href="tel:<{$Think.config.web_phone}>"><span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>手机</a></div>
+    <div class="foot_nav"  aria-hidden="true"  data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="glyphicon glyphicon-th-list btn-lg"></span>分类</div>
+    <div class="foot_nav"><a id="gototop" href="#"><span class="glyphicon glyphicon-circle-arrow-up btn-lg" aria-hidden="true"></span>顶部</a></div>
+</nav>
+
+<footer>
+    <div class="copyright">
+        <p><{$Think.config.web_copyright}>&nbsp;<{$Think.config.web_icp}> <a href="__ROOT__/sitemap.html" target="_blank">网站地图</a></p>
+        <p class="copyright_p">地址：<{$Think.config.web_add}> &nbsp;电话：<{$Think.config.web_tel}> &nbsp;传真：<{$Think.config.web_fax}>&nbsp;<{$Think.config.web_count}></p>
+    </div>
+    <include file='Public:translate'/> 
+</footer>
+
+<{:W('Online')}>

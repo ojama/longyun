@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TAGS标签-<{$Think.config.seo_title}></title>
+    <meta name="keywords" content="<{$Think.config.seo_keywords}>" />
+    <meta name="description" content="<{$Think.config.seo_description}>" />
+    <include file='Public:file'/>
+  </head>
+  <body>
+  
+ <include file='Public:head'/>
+
+ <include file='Public:listbg'/>
+   
+     <!-- main -->
+    <div class="container">    
+        <div class="row">
+        
+            <!-- right -->
+            <div class="col-xs-12 col-sm-8 col-md-9" style="float:right">
+                <div class="list_box"> 
+                  <h2 class="left_h2">TAGS标签</h2>
+
+                   <div class="tags tags_list">
+                    <volist name="tags" id="vo">      
+                      <a class="btn btn-default btn-sm" href="<{:W('Taghref',array('id'=>$vo['id'],'type'=>$vo['type']))}>" role="button" target="_blank"><{$vo.name}></a>
+                    </volist>
+                  </div>
+
+                </div>
+        </div>
+
+        <!-- left -->
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="left_nav" id="categories">
+              <h2 class="left_h2">导航栏目</h2>
+              <{:W('Left',array('id'=>1,'type'=>'product'))}>
+            </div>
+
+            <div class="left_news">
+              <h2 class="left_h2">新闻中心</h2>
+              <{:W('List',array('table'=>'New','bid'=>2,'id'=>2))}>
+            </div>
+           <include file='Public:contact'/>
+        </div>
+               
+        </div>
+    </div> 
+    
+  <include file='Public:foot'/>
+    
+  </body>
+</html>

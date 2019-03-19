@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<load href="../Public/js/jquery-1.7.2.min.js"/>
+<load href="../Public/css/index.css"/>
+<load href="../Public/js/quickView.js"/>
+<title>修改图片</title>
+<include file='Public:kinde'/>
+<script type="text/javascript">
+	$(function () {
+		$( '.del' ).click( function () {
+			return confirm('确认删除该图片？');
+		} );
+	});
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="LineRightBlue1">
+      <table width="95%" border="0" cellpadding="0" cellspacing="0" style="margin-left:20px;">
+      <tr>
+        <td width="88%" height="24">修改图片 【<a href="<{:U('Photo/index')}>">返回图片列表</a>】</td>
+        <td width="12%" align="right" class="bt_add"></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<form action="<{:U('updatephoto')}>" method="post" name="myform" id="myform" enctype="multipart/form-data">
+<DIV class="PageContent">
+<table width="98%" border="0" style="margin:20px;" class="ListCategory">
+  <tr>
+    <td width="9%">图片名称：</td>
+    <td width="91%" height="35"><input name="name" type="text" class="FormSmall" value="<{$photolist.name}>" style="width: 320px;"> 
+	<span style="color:#F00; font-size:12px;">*必填</span>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>图片分类:</td>
+    <td height="35">
+      <select name="pid" style="height:28px;">
+      <volist name='list' id='vo'>
+          <option value="<{$vo.id}>" <eq name="vo.id" value="$photolist.pid">selected="selected"</eq>><{$vo.html}><if condition='$vo.level gt 0'>┕</if><{$vo.name}></option>
+      </volist>
+      </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td>排序ID：</td>
+    <td height="35"><input name="sort" type="text" class="FormSmall" value="<{$photolist.sort}>" style="width: 50px;"> <span style="color:#F00; font-size:12px;">*必填</span></td>
+  </tr>
+
+  <tr>
+    <td>URL优化：</td>
+    <td height="35"><input name="url" type="text" value="<{$photolist.url}>" class="FormSmall" style="width: 320px;"> <a title='URL只能是字母，数字，下划线或-'style="margin-left: 5px;" href="#"><img src="../Public/images/help.gif"></a></td>
+  </tr>
+  
+  <tr>
+    <td width="9%">SEO标题：</td>
+    <td width="91%" height="35"><input name="title" type="text" value="<{$photolist.title}>" class="FormSmall" style="width: 320px;"> 
+	<span style="color:#F00; font-size:12px;">*必填</span>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>SEO关键字：</td>
+    <td height="35"><input name="keywords" type="text" class="FormSmall" value="<{$photolist.keywords}>" style="width: 320px;"></td>
+  </tr>
+  
+  <tr>
+    <td>SEO描述：</td>
+    <td height="110"><textarea name="description" class="FormSmall" style="width: 450px; height: 80px;"><{$photolist.description}></textarea>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>缩略图：</td>
+    <td height="35">
+    <empty name='photolist.thumb'>
+    <input type='file' name='thumb'>
+    <input type="hidden" name="tnum" value="1">
+    <else/>
+      <p style="padding:4px 0;"><img src="__ROOT__/Uploads/<{$photolist.thumb}>" width="60" height="60"/>
+      <a href="<{:U('delphoto',array('name'=>$photolist['thumb'],'id'=>$photolist['id'],'field'=>'thumb'))}>" class='del'>删除该图片</a>
+      </p>
+     </empty> 
+    </td>
+  </tr>
+  
+  <tr>
+    <td>追加主图数量：</td>
+    <td height="35">
+	<script language="JavaScript" type="text/javascript">
+    function setUrlNum(){
+    str='';
+    
+        if(!document.myform.Num.value){
+            document.myform.Num.value=1;
+        }
+        for(i=1;i<=document.myform.Num.value;i++){
+            str+= '<p style="margin:6px 2px; font-size:12px;">追加主图'+i+'：<input name="photo[]" type="file" id="photo'+i+'"></p>';
+        }
+            document.getElementById('UpID').innerHTML=str;
+    }
+    </script>
+    <input value="0" name="Num" class="FormSmall" style="width: 50px;"/>
+    <input onClick="setUrlNum();" type="button" value="设定" class="bginput" style="width:45px; height:28px;"/>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>图片主图：</td>
+    <td height="35">
+      <notempty name="photo">
+      <volist name='photo' id='vo'>
+      <p style="padding:1px;"><img src="__ROOT__/Uploads/<{$photo[$key]}>" width="60" height="60"/>
+      <a href="<{:U('delphoto',array('name'=>$photo[$key],'id'=>$photolist['id'],'field'=>'photo'))}>" class='del'>删除该图片</a>
+      </p>
+      </volist>
+        <div id="UpID"></div>
+        <div style="padding:10px 0px 10px 0px;"><a href="<{:U('delmain',array('id'=>$photolist['id']))}>" class='del'>[ 删除全部主图 ]</a></div>
+      <else/>
+          <div id="UpID"></div>
+      </notempty> 
+    </td>
+  </tr>
+  
+  <tr>
+    <td>图片内容：</td>
+    <td>
+    <textarea name="contents" style="width:680px; height:320px; margin:8px 0;visibility:hidden;"><{$photolist.contents}></textarea>
+    </td>
+  </tr>
+  
+  <tr>
+    <td height="55" align="center">
+    </td>
+    <td height="55" align="left">
+    <input type="hidden" name="id" value="<{$photolist.id}>">
+    <input type="submit" value="确认修改" class="bginput">&nbsp;&nbsp;
+    </td>
+    </tr>
+</table>
+</DIV>
+</form>
+</body>
+</html>

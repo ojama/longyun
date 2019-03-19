@@ -1,0 +1,13 @@
+<if condition="$tags">
+<div class="tags_box">
+    <div class="container">
+	<span class="tags_title"><a href="<{:U('Tags/index')}>" role="button">全部标签</a></span>
+	<button id="tags_btn" class="glyphicon glyphicon-plus" aria-hidden="true"></button>
+	<span class="tags_rows">
+	      <volist name="tags" id="vo">
+	      	<a href="<{:W('Taghref',array('id'=>$vo['id'],'type'=>$vo['type']))}>" role="button"  target="_blank"><{$vo.name}></a>
+	      </volist>
+	</span>
+    </div>
+</div>
+</if>

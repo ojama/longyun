@@ -1,0 +1,14 @@
+<if condition="$photo">
+    <volist name='photo' id='vo' offset="0" length="3">
+    <div class="col-sm-4 col-md-4 col-mm-6 team_img">
+          <a href="<{:W('Href',array('url'=>$vo['url'],'id'=>$vo['id'],'type'=>'Photo'))}>"><img src="__ROOT__/Uploads/<{$vo.thumb}>" class="opacity_img" alt="<{$vo.name}>"/></a>
+          <div class="team_desc";>
+          	<a href="<{:W('Href',array('url'=>$vo['url'],'id'=>$vo['id'],'type'=>'Photo'))}>"><{$vo.name|mb_substr=###,0,12,'utf-8'}></a>
+          	<p><{$vo.description|mb_substr=###,0,70,'utf-8'}></p>
+          </div>
+     </div>
+    </volist>
+</if>
+
+
+

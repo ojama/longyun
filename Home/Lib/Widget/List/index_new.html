@@ -1,0 +1,14 @@
+<if condition="$new">
+  <ul class="news_index">
+    <volist name="new" id="vo" offset="0" length="5">
+	<li>
+	  <span>
+	    <strong><{$vo.time|date='d',###}></strong>
+	    <i><{$vo.time|date='Y-m',###}></i>
+	  </span>
+	  <a href="<{:W('Href',array('url'=>$vo['url'],'id'=>$vo['id'],'type'=>'new','lang'=>'c'))}>" title="<{$vo.title}>"><{$vo.title|mb_substr=###,0,60,'utf-8'}></a><br>
+	  <em><{$vo.description|mb_substr=###,0,70,'utf-8'}></em>
+	</li>
+    </volist>
+  </ul>
+</if>

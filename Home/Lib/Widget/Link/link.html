@@ -1,0 +1,12 @@
+<if condition="$links">
+<div class="link_box">
+    <div class="container">
+      <span class="link_title">友情链接</span><button id="link_btn" class="glyphicon glyphicon-plus" aria-hidden="true"></button>
+      <span class="link_list">
+  <volist name='links' id='vo'>
+  <a target="_blank" href="<{$vo.url}>"><{$vo.name}></a>
+  </volist> 
+      </span>
+    </div>
+</div>
+</if>

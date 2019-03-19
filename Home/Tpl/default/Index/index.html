@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><{$Think.config.seo_title}></title>
+    <meta name="keywords" content="<{$Think.config.seo_keywords}>" />
+    <meta name="description" content="<{$Think.config.seo_description}>" />
+    <include file='Public:file'/>
+  </head>
+  <body>
+
+ <include file='Public:head'/>
+
+ <{:W('Flash')}>
+    <script type="text/javascript">
+        $('.bxslider').bxSlider({
+          adaptiveHeight: true,
+          infiniteLoop: false,
+          hideControlOnEnd: true,
+          auto:true
+        });
+    </script>
+
+    <div class="container">    
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+                <div class="index_product">
+                    <h2 class="product_h2"><span>产品</span>展示</h2>
+                    <p class="product_p">PRODUCT DISPLAY</p>
+                        <div class="product_list">
+                        <{:W('List',array('table'=>'Product','bid'=>1,'id'=>1))}>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutus" style=" background: url('__ROOT__/Uploads/<{:W('Flash',array('type'=>3,'id'=>14))}>') center center no-repeat; background-size: cover;background-attachment: fixed;">
+        <h2>关于我们</h2>
+        <span>ABOUT US</span>
+        <div class="container about_box">
+            <div class="col-xs-12 col-sm-5 col-md-5">
+                <img src="../Public/images/about.png" alt="公司简介">
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-7">
+                <{:W('About',array('id'=>25,'len'=>340))}>
+                <a href="<{:W('Listhref',array('id'=>25))}>" class="btn btn-info view-all" role="button">查看详细</a>
+            </div>
+        </div> 
+    </div>
+
+    <div class="container">    
+        <div class="row">
+            <h2 class="news_h2"><span>新闻</span>中心</h2>
+            <p class="news_p">NEWS CENTER</p>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="col-sm-12 col-md-5 news_img" data-move-x="-100px" style="background-image: url(__ROOT__/Uploads/<{:W('Flash',array('type'=>3,'id'=>12))}>);">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7  news_text" data-move-y="150px">
+                        <{:W('List',array('table'=>'New','bid'=>2,'id'=>2,'moban'=>'index_new'))}>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <{:W('Link')}>
+
+    <{:W('Tags')}>
+
+    <include file='Public:foot'/>
+
+  </body>
+</html>
