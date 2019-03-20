@@ -1,8 +1,465 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8c65d2e-4dd6-4947-9d38-d4a1d7fc21c4" name="Default Changelist" comment="初始化">
+    <list default="true" id="a8c65d2e-4dd6-4947-9d38-d4a1d7fc21c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Home/Common/common.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Conf/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Conf/debug.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/CommonAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/DownloadAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/EmptyAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/FeedbackAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/IndexAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/InquiryAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/ListAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/NewAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/PhotoAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/ProductAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/SearchAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/SitemapAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Action/TagsAction.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Model/FeedbackModel.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Model/InquiryModel.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Org/Email.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Org/Page.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Org/Phpmailer.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Org/class.pop3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Org/class.smtp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/AboutWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/FlashWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/HrefWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/LeftWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/LinkWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/ListWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/ListhrefWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/NavWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/OnlineWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/TaghrefWidget.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/Lib/Widget/TagsWidget.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/About/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/About/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/Flash/adv.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/Flash/adv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/Flash/flash.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/Flash/flash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/Left/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/Left/left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/Link/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/Link/link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/List/download.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/List/download.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/List/index_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/List/index_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/List/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/List/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/List/photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/List/photo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/List/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/List/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/List/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/List/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/Nav/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/Nav/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/Online/online.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/Online/online.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Lib/Widget/Tags/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Lib/Widget/Tags/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Download/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Download/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Feedback/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Feedback/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Inquiry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Inquiry/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/List/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/List/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/List/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/List/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/List/photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/List/photo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/New/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/New/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Photo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Photo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Product/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/css/bxslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/css/bxslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/css/lightbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/css/lightbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/file.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/file.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/foot.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/foot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/about_line.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/about_line.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/bx_loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/bx_loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/controls.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/controls.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/left_li.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/left_li.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/left_sli.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/left_sli.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/left_tree.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/left_tree.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/li.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/li.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/li.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/li.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/more.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/more.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/more.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/more.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/msn.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/msn.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/skype.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/skype.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/tel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/tel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/tel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/tel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/title_line.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/title_line.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/images/title_line.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/images/title_line.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/js/bxslider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/js/bxslider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/js/lightbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/js/lightbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/js/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/js/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/jump.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/jump.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/listbg.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/listbg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Public/translate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Public/translate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Sitemap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Sitemap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/Tpl/default/Tags/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/Tpl/default/Tags/tag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/529c3fcc09d41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/529c3fcc09d41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/52b941917910f.png" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/52b941917910f.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/53007d5b00000.png" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/53007d5b00000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/53007d7931975.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/53007d7931975.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300811240d99.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300811240d99.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300c196f0537.png" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300c196f0537.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300c3850b71b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300c3850b71b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300c62e98968.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300c62e98968.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300c769af79e.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300c769af79e.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300c83ab71b0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300c83ab71b0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300c8cb76417.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300c8cb76417.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300c942ec82e.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300c942ec82e.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300ca7e29f63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300ca7e29f63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5300cd8b487ab.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5300cd8b487ab.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530860294daf2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530860294daf2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530860295a23a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530860295a23a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530860295aac2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530860295aac2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530860295b15f.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530860295b15f.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530860295b7ac.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530860295b7ac.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530860295beb7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530860295beb7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530860295c676.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530860295c676.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530860295cd67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530860295cd67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530869feb247b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530869feb247b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530869feb30f3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530869feb30f3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530869feb4c45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530869feb4c45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530869feb5357.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530869feb5357.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530869feb5a6d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530869feb5a6d.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530869feb6146.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530869feb6146.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/530869feb6920.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/530869feb6920.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/53086a8ade88c.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/53086a8ade88c.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5780c309432c5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5780c309432c5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5784bac44a3e7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5784bac44a3e7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/58046b8dc84d4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/58046b8dc84d4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5836b0fdd9ed8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5836b0fdd9ed8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5836b1541f2f8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5836b1541f2f8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/5836b17bb1809.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/5836b17bb1809.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/595f5185707ff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/595f5185707ff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Common/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Common/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Conf/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Conf/debug.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Conf/debug.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/CommonAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/CommonAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/ConfigAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/ConfigAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/DeltempAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/DeltempAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/DownloadAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/DownloadAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/EmptyAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/EmptyAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/FeedbackAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/FeedbackAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/FlashAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/FlashAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/IndexAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/IndexAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/InquiryAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/InquiryAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/InsideAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/InsideAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/LinkAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/LinkAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/ListAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/ListAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/LoginAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/LoginAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/NewAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/NewAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/PhotoAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/PhotoAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/ProductAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/ProductAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/StaticAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/StaticAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/TagsAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/TagsAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/TextAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/TextAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Action/UserAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Action/UserAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/DownloadModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/DownloadModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/FlashModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/FlashModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/InsideModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/InsideModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/ListModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/ListModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/NewModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/NewModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/PhotoModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/PhotoModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/ProductModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/ProductModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/TagsModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/TagsModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Model/UserModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Model/UserModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Org/Image.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Org/Image.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Lib/Org/UploadFile.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Lib/Org/UploadFile.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Config/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Config/setstatic.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Config/setstatic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Config/water.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Config/water.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Download/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Download/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Download/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Download/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Download/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Download/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Feedback/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Feedback/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Feedback/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Feedback/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Flash/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Flash/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Flash/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Flash/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Flash/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Flash/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Flash/recycle.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Flash/recycle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Index/debugindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Index/debugindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Index/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Index/left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Index/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Index/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Index/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Index/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Inquiry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Inquiry/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Inquiry/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Inquiry/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Inside/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Inside/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Inside/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Inside/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Inside/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Inside/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Link/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Link/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Link/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Link/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Link/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Link/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/List/addlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/List/addlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/List/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/List/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/List/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/List/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/New/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/New/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/New/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/New/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/New/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/New/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Photo/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Photo/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Photo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Photo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Photo/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Photo/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Product/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Product/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Product/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Product/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Product/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/arrow_right.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/arrow_right.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/banner.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/banner.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/box.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/box.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/company.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/company.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/config.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/config.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/contact.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/contact.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/download.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/download.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/head_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/head_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/ico.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/ico.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/input_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/input_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/left_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/left_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/link.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/link.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/login_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/login_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/news.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/news.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/photo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/photo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/products.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/products.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/reset_btn.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/reset_btn.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/submit_btn.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/submit_btn.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/tiao.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/tiao.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/title.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/title.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/user.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/blue_2010/user.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/help.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/help.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/maxus.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/maxus.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/minus.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/minus.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/msg.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/msg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/msg_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/msg_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/images/tiao.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/images/tiao.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/js/jquery-1.7.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/js/quickView.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/js/quickView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/js/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/js/select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/jump.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/jump.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Public/kinde.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Public/kinde.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Tags/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Tags/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/Tags/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/Tags/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/User/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/User/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/User/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/User/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/Tpl/User/mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/Tpl/User/mod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/kindeditor-all-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/kindeditor-all-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/kindeditor-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/kindeditor-all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/kindeditor-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/kindeditor-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/kindeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/kindeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/lang/zh_CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/lang/zh_CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/lang/zh_TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/lang/zh_TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/php/JSON.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/php/JSON.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/php/file_manager_json.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/php/file_manager_json.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/php/upload_json.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/php/upload_json.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/anchor/anchor.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/anchor/anchor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/autoheight/autoheight.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/autoheight/autoheight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/baidumap/baidumap.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/baidumap/baidumap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/baidumap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/baidumap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/baidumap/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/baidumap/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/clearhtml/clearhtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/clearhtml/clearhtml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/code/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/code/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/code/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/code/prettify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/code/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/code/prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/emoticons.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/emoticons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/100.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/100.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/101.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/101.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/102.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/102.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/103.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/103.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/104.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/104.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/105.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/105.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/106.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/106.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/107.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/107.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/108.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/108.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/109.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/109.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/11.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/110.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/110.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/111.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/111.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/112.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/112.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/113.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/113.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/114.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/114.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/115.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/115.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/116.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/116.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/117.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/117.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/118.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/118.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/119.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/119.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/120.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/120.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/121.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/121.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/122.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/122.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/123.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/123.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/124.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/124.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/125.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/125.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/126.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/126.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/127.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/127.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/128.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/128.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/129.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/129.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/130.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/130.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/131.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/131.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/132.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/132.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/133.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/133.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/134.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/134.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/14.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/17.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/17.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/18.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/19.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/20.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/20.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/21.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/22.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/23.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/23.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/24.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/25.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/26.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/26.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/27.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/28.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/29.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/30.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/30.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/31.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/32.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/32.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/33.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/34.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/35.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/35.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/36.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/37.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/38.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/39.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/39.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/40.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/41.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/42.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/42.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/43.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/44.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/45.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/45.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/46.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/47.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/48.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/48.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/49.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/50.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/51.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/51.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/52.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/53.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/54.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/54.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/55.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/56.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/57.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/57.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/58.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/59.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/60.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/60.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/61.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/62.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/63.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/63.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/65.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/66.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/67.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/67.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/68.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/69.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/70.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/71.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/71.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/72.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/72.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/73.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/73.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/74.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/74.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/75.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/75.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/76.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/76.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/77.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/77.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/78.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/78.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/79.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/79.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/80.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/80.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/81.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/81.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/82.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/82.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/83.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/83.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/84.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/84.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/85.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/85.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/86.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/86.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/87.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/87.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/88.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/88.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/89.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/89.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/90.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/90.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/91.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/91.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/92.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/92.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/93.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/93.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/94.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/94.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/95.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/95.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/96.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/96.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/97.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/97.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/98.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/98.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/99.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/99.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/static.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/emoticons/images/static.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/filemanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/filemanager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/file-16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/file-16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/file-64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/file-64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/folder-16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/folder-16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/folder-64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/folder-64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/go-up.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/filemanager/images/go-up.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/flash/flash.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/flash/flash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/images/align_left.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/images/align_left.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/images/align_right.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/images/align_right.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/images/align_top.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/images/align_top.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/images/refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/image/images/refresh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/insertfile/insertfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/insertfile/insertfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/lineheight/lineheight.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/lineheight/lineheight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/link/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/link/link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/map/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/map/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/map/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/map/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/media/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/media/media.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/images/select-files-en.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/images/select-files-en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/images/select-files-zh_CN.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/images/select-files-zh_CN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/images/swfupload.swf" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/images/swfupload.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/multiimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/multiimage/multiimage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/pagebreak/pagebreak.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/pagebreak/pagebreak.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/plainpaste/plainpaste.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/plainpaste/plainpaste.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/preview/preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/preview/preview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/quickformat/quickformat.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/quickformat/quickformat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/table/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/table/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/template/html/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/template/html/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/template/html/2.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/template/html/2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/template/html/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/template/html/3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/template/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/template/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/plugins/wordpaste/wordpaste.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/plugins/wordpaste/wordpaste.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/anchor.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/anchor.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/blank.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/blank.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/flash.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/flash.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/media.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/media.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/rm.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/common/rm.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/default/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/default/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/default/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/default/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/default/default.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/default/default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/qq/editor.gif" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/qq/editor.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/qq/qq.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/qq/qq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUser/kindeditor/themes/simple/simple.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebUser/kindeditor/themes/simple/simple.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,20 +469,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/install/lankecms.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$USER_HOME$/Downloads/A16/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-933" />
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mysql.php" />
+        <option value="$PROJECT_DIR$/install/lankecms.php" />
+        <option value="$PROJECT_DIR$/WebUser/Lib/Action/CommonAction.class.php" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
@@ -43,11 +506,6 @@
             <path>
               <item name="longyun" type="b2602c69:ProjectViewProjectNode" />
               <item name="longyun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="longyun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="longyun" type="462c0819:PsiDirectoryNode" />
-              <item name="install" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -85,12 +543,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552965829535</updated>
-      <workItem from="1552965831019" duration="889000" />
+      <workItem from="1552965831019" duration="4905000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化">
+      <created>1552967247189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552967247189</updated>
+    </task>
+    <task id="LOCAL-00002" summary="初始化">
+      <created>1553013643139</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553013643139</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="889000" />
+    <option name="totallyTimeSpent" value="4905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -124,11 +597,150 @@
     <option name="LAST_COMMIT_MESSAGE" value="初始化" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUser/Conf/debug.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-933" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/httpd.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/ThinkPHP.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Common/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="111" column="36" lean-forward="true" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/s4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2904">
+          <folding>
+            <element signature="e#27#34#1" expanded="true" />
+            <element signature="e#38#45#1" expanded="true" />
+            <element signature="e#27#34#1" expanded="true" />
+            <element signature="e#38#45#1" expanded="true" />
+            <element signature="e#27#34#1" expanded="true" />
+            <element signature="e#38#45#1" expanded="true" />
+            <element signature="e#31#38#1" expanded="true" />
+            <element signature="e#31#38#1" expanded="true" />
+            <element signature="e#42#49#1" expanded="true" />
+            <element signature="e#31#38#1" expanded="true" />
+            <element signature="e#42#49#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/install/lankecms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="215" column="13" lean-forward="true" selection-start-line="215" selection-start-column="13" selection-end-line="221" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#21#27#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/header.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/s1.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/s2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#27#34#1" expanded="true" />
+            <element signature="e#38#45#1" expanded="true" />
+            <element signature="e#27#34#1" expanded="true" />
+            <element signature="e#38#45#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install/s3.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUser/Common/common.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUser/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUser/Lib/Action/CommonAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/Tpl/default/New/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUser/Tpl/New/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUser/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/A16/static.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/A16/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-933" />
+      </provider>
     </entry>
   </component>
 </project>
