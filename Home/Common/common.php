@@ -1,4 +1,10 @@
 <?php
+/**
+ * @param $array
+ * @param int $pid
+ * @param int $level
+ * @return array
+ */
 function recursive ($array, $pid=0, $level=0) {
 	$arr = array();
 	foreach ($array as $v) {
