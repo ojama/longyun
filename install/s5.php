@@ -10,7 +10,7 @@
   <?php require './header.php';?>
   <div class="section">
     <div class="">
-      <div class="success_tip cc"><a href="../MyAccount/" target="_blank" class="f16 b">安装完成，进入后台管理</a>
+      <div class="success_tip cc"><a href="../WebUser/" target="_blank" class="f16 b">安装完成，进入后台管理</a>
         <p>默认LankeCMS管理员：<span style="color:#F00">admin</span> &nbsp;&nbsp;管理员密码：<span style="color:#F00">admin</span></p>
 		    <p>为了您站点的安全，安装完成后请将网站根目录下的 <span style="color:#F00">“Install”</span> 文件夹删除。如首页无法访问，请先登录后台“清除缓存”。<a href="../" target="_blank" class="f14">【访问首页】</a><p>
         <p>官方网站：<a href="http://www.lankecms.com/" target="_blank">www.lankecms.com</a></p>
